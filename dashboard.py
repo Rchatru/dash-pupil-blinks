@@ -13,6 +13,7 @@ from scipy.signal import spectrogram
 # Import Plotly for graphing
 import plotly.graph_objects as go
 import boto3
+import s3fs
 
 
 

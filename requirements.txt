@@ -2,5 +2,5 @@ pandas
 numpy
 scipy
 plotly
-dash==2.14.1
+dash==2.15.0
 gunicorn

@@ -12,8 +12,12 @@ from scipy.signal import hann
 from scipy.signal import spectrogram
 # Import Plotly for graphing
 import plotly.graph_objects as go
+import boto3
 
-df = pd.read_parquet('pupil_blinks.parquet.gzip')
+
+
+#df = pd.read_parquet('pupil_blinks.parquet.gzip')
+df = pd.read_parquet('s3://render-dashboard-pupil/pupil_blinks.parquet.gzip')
 
 # Create a Dash app
 app = dash.Dash(__name__)

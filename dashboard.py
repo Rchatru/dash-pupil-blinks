@@ -17,6 +17,7 @@ df = pd.read_parquet('pupil_blinks.parquet.gzip')
 
 # Create a Dash app
 app = dash.Dash(__name__)
+server = app.server
 
 fs = 300 # Hz
 
@@ -195,5 +196,8 @@ def update_fft_and_spectrogram(selected_id, relayoutData):
     return fft_figure, spectrogram_figure
 
 # Run the app
+#if __name__ == '__main__':
+#    app.run(debug=True, use_reloader=False, port=8050)
+
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=False, port=8050)
+    app.run_server(debug=False)

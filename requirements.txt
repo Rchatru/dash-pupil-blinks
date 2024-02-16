@@ -4,3 +4,5 @@ scipy
 plotly
 dash==2.15.0
 gunicorn
+boto3
+s3fs

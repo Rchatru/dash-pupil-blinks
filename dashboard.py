@@ -18,7 +18,7 @@ import s3fs
 
 
 #df = pd.read_parquet('pupil_blinks.parquet.gzip')
-df = pd.read_parquet('s3://render-dashboard-pupil/pupil_blinks.parquet.gzip')
+df = pd.read_parquet('s3://render-dashboard-pupil/pupil_blinks.parquet_01c.gzip')
 
 # Create a Dash app
 app = dash.Dash(__name__)
